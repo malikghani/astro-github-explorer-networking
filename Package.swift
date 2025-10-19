@@ -11,6 +11,9 @@ let package = Package(
             name: "GithubExplorerNetworking",
             targets: ["GithubExplorerNetworking"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/malikghani/astro-github-explorer-utils", from: "0.0.1")
+    ],
     targets: [
         .target(
             name: "GithubExplorerNetworking"),
