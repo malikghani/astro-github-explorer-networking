@@ -37,7 +37,7 @@ extension APIServiceError: LocalizedError {
                 "HTTP \(code)"
             }
         case .noNetwork:
-            "No network connection. Please check your internet connection and try again."
+            "No network connection.\nPlease check your internet connection and try again."
         }
     }
 }
