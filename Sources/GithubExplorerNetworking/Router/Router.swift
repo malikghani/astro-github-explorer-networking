@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import GithubExplorerUtils
 
 /// A protocol that defines the requirements for constructing API endpoints in a type-safe manner.
 public protocol Router {

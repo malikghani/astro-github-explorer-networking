@@ -1,13 +1,13 @@
 {
-  "originHash" : "092a948510d418a8af43f1acc25760a308ce7d7a5454c69fea292414cefb7435",
+  "originHash" : "b73466ae4e6210ef067d7831bec0d79faccf268b4323ac7d607f051a7e07a419",
   "pins" : [
     {
       "identity" : "astro-github-explorer-utils",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/malikghani/astro-github-explorer-utils",
       "state" : {
-        "revision" : "57cef0a71be8ea592927f01cffeafbfe1aab1345",
-        "version" : "0.0.1"
+        "revision" : "f99e4ffc84aeb42d4ff43aa7366bbba5e01f14f5",
+        "version" : "0.0.2"
       }
     }
   ],

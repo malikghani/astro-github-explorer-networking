@@ -9,14 +9,25 @@ let package = Package(
     products: [
         .library(
             name: "GithubExplorerNetworking",
-            targets: ["GithubExplorerNetworking"]),
+            targets: ["GithubExplorerNetworking"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/malikghani/astro-github-explorer-utils", from: "0.0.1")
+        .package(
+            url: "https://github.com/malikghani/astro-github-explorer-utils",
+            from: "0.0.1"
+        )
     ],
     targets: [
         .target(
-            name: "GithubExplorerNetworking"),
+            name: "GithubExplorerNetworking",
+            dependencies: [
+                .product(
+                    name: "GithubExplorerUtils",
+                    package: "astro-github-explorer-utils"
+                )
+            ]
+        ),
         .testTarget(
             name: "GithubExplorerNetworkingTests",
             dependencies: ["GithubExplorerNetworking"]
