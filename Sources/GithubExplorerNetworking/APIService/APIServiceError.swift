@@ -17,6 +17,9 @@ enum APIServiceError: Error {
 
     /// Indicates that the server responded with a non-successful HTTP status code.
     case http(code: Int, message: String?)
+
+    /// Indicates that the request could not be sent because there is no active network connection.
+    case noNetwork
 }
 
 // MARK: - LocalizedError Conformance
@@ -33,6 +36,8 @@ extension APIServiceError: LocalizedError {
             } else {
                 "HTTP \(code)"
             }
+        case .noNetwork:
+            "No network connection. Please check your internet connection and try again."
         }
     }
 }
